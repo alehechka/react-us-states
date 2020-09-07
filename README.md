@@ -1,4 +1,4 @@
-# react-ntc
+# react-us-states
 
 React Hooks module for the [states-us](https://www.npmjs.com/package/states-us) package.
 

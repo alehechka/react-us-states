@@ -1,6 +1,6 @@
 {
   "name": "react-us-states",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hooks extensions to states-us npm package.",
   "keywords": [
     "react",
