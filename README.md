@@ -1,61 +1,62 @@
 # react-ntc
 
-React Hooks module for the [Name That Color](http://chir.ag/projects/ntc/) project.
+React Hooks module for the [states-us](https://www.npmjs.com/package/states-us) package.
 
 ## Installation
 
 To install react-ntc with `npm`:
 
-    npm install react-ntc
+    npm install react-us-states
 
 To install react-ntc with `yarn`:
 
-    yarn add react-ntc
+    yarn add react-us-states
 
 # Types
 
 ```ts
-interface ColorMap {
-	[key: string]: string;
-}
-
-interface ColorObject {
+interface StateObject {
 	name: string;
-	hex: string;
+  abbreviation: string;
+  territory: boolean;
+  contiguous: boolean;
 }
 
-type ColorTuple = [hex: string, name: string];
+interface StateMap {
+	[abbreviation: string]: string;
+}
+
+interface FullStateMap {
+  [abbreviation: string]: StateObject;
+}
+
+type StateTuple = [
+  name: string,
+  abbreviation: string,
+  territory: boolean,
+  contiguous: boolean
+];
 ```
 
 # Hooks
 
 ```ts
-useColors()
+useStates()
 
-useColorObjects()
+useStateMap()
 
-useColorTuples()
+useFullStateMap()
 
-useLookupColors(hexValues: string[])
+useStateTuples()
 
-useLookupColorObjects(hexValues: string[])
+useStateNameLookup(abbreviation: string)
 
-useLookupColorTuples(hexValues: string[])
-
-useNameThatColor()
-```
-
-# Functions
-
-```ts
-formatHex(hex: string)
-
-formatHexValues(hexValues: string)
+useStateObjectLookup(abbreviation: string)
 ```
 
 # Demo
 
-View demo here: [https://alehechka.github.io/react-ntc/](https://alehechka.github.io/react-ntc/)
+View demo here: [https://alehechka.github.io/react-us-states/](https://alehechka.github.io/react-us-states/)
 
 ## License
 
