@@ -2,6 +2,10 @@
 
 React Hooks module for the [states-us](https://www.npmjs.com/package/states-us) package.
 
+[![npm version](https://img.shields.io/npm/v/react-us-states.svg?style=flat-square)](https://www.npmjs.com/package/react-us-states)
+[![npm-publish](https://github.com/alehechka/react-us-states/workflows/npm-publish/badge.svg)](https://github.com/alehechka/react-us-states/actions)
+[![npm downloads](https://img.shields.io/npm/dm/react-us-states.svg?style=flat-square)](https://www.npmjs.com/package/react-us-states)
+
 ## Installation
 
 To install react-ntc with `npm`:
